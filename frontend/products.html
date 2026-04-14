@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products &amp; Services – KESME SACCO Ltd</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">K</div>
+        <div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a><a href="about.html">About</a>
+        <a href="products.html" class="active">Products</a><a href="agribusiness.html">Agribusiness</a>
+        <a href="membership.html">Membership</a><a href="news.html">News</a><a href="contact.html">Contact</a>
+      </nav>
+      <a href="membership.html" class="btn btn-gold nav-portal">Join Now</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a><a href="about.html" class="mobile-link">About</a>
+      <a href="products.html" class="mobile-link active">Products</a><a href="agribusiness.html" class="mobile-link">Agribusiness</a>
+      <a href="membership.html" class="mobile-link">Membership</a><a href="news.html" class="mobile-link">News</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
+      <a href="membership.html" class="btn btn-gold mobile-portal">Join Now</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="hero-pattern"></div>
+    <div class="container page-hero-content">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span class="current">Products &amp; Services</span></div>
+      <h1>Products &amp; Services</h1>
+      <p>Comprehensive financial solutions designed to empower your savings, credit, and investment goals.</p>
+    </div>
+  </section>
+
+  <!-- PRODUCTS TABS -->
+  <section class="products-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Offer</span>
+        <h2>Our Financial Products</h2>
+        <p>Choose the right financial solution for your journey — from savings to credit to capacity building.</p>
+      </div>
+
+      <div class="products-tabs">
+        <button class="tab-btn active" data-tab="tab-savings">Savings Products</button>
+        <button class="tab-btn" data-tab="tab-loans">Loan Products</button>
+        <button class="tab-btn" data-tab="tab-agri">Agribusiness</button>
+        <button class="tab-btn" data-tab="tab-capacity">Capacity Building</button>
+      </div>
+
+      <!-- SAVINGS -->
+      <div class="tab-panel active" id="tab-savings">
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon pi-green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </div>
+            <h4>Regular Savings Account</h4>
+            <p>A flexible, easy-to-use savings account that earns interest on your deposits. Ideal for all members.</p>
+            <ul class="product-features">
+              <li>Minimum monthly contribution from KES 500</li>
+              <li>Competitive interest rates on savings</li>
+              <li>Access to loan based on savings history</li>
+              <li>No monthly maintenance fees</li>
+            </ul>
+            <br/><span class="product-tag">Savings</span>
+          </div>
+          <div class="product-card">
+            <div class="product-icon pi-gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            </div>
+            <h4>Fixed Deposit Account</h4>
+            <p>Lock your savings for a fixed period and earn higher interest returns. Perfect for building capital.</p>
+            <ul class="product-features">
+              <li>Terms from 3 to 24 months</li>
+              <li>Higher interest than regular savings</li>
+              <li>Guaranteed returns on maturity</li>
+              <li>Can be used as loan collateral</li>
+            </ul>
+            <br/><span class="product-tag">Savings</span>
+          </div>
+          <div class="product-card">
+            <div class="product-icon pi-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h4>Group Savings Account</h4>
+            <p>Designed for chamas, self-help groups, and table banking groups to pool resources and grow together.</p>
+            <ul class="product-features">
+              <li>Supports groups of 5 to 50+ members</li>
+              <li>Transparent group account management</li>
+              <li>Access to group boost financing</li>
+              <li>Regular group financial statements</li>
+            </ul>
+            <br/><span class="product-tag">Group</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOANS -->
+      <div class="tab-panel" id="tab-loans">
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon pi-green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            </div>
+            <h4>Development Loan</h4>
+            <p>Long-term financing for business expansion, asset acquisition, and enterprise development projects.</p>
+            <ul class="product-features">
+              <li>Up to KES 5,000,000</li>
+              <li>Repayment up to 36 months</li>
+              <li>Competitive interest rates</li>
+              <li>Flexible collateral requirements</li>
+            </ul>
+            <br/><span class="product-tag">Credit</span>
+          </div>
+          <div class="product-card">
+            <div class="product-icon pi-gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h4>Emergency Loan</h4>
+            <p>Fast-tracked loans for urgent personal and family needs — processed within 24 hours for qualified members.</p>
+            <ul class="product-features">
+              <li>Disbursed within 24 hours</li>
+              <li>Up to 3x your savings balance</li>
+              <li>Minimal documentation required</li>
+              <li>Repayment up to 12 months</li>
+            </ul>
+            <br/><span class="product-tag">Emergency</span>
+          </div>
+          <div class="product-card">
+            <div class="product-icon pi-purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+            </div>
+            <h4>SME Business Loan</h4>
+            <p>Tailored financing for small and medium enterprises — covering working capital, inventory, and expansion.</p>
+            <ul class="product-features">
+              <li>For registered and unregistered SMEs</li>
+              <li>Working capital and asset financing</li>
+              <li>Business advisory support included</li>
+              <li>Linked to capacity building training</li>
+            </ul>
+            <br/><span class="product-tag">SME</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- AGRIBUSINESS -->
+      <div class="tab-panel" id="tab-agri">
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon pi-green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V12M12 12C12 7 7 2 2 2c0 5 5 10 10 10zM12 12c0-5 5-10 10-10-0 5-5 10-10 10z"/></svg>
+            </div>
+            <h4>Input Financing</h4>
+            <p>Credit for purchasing seeds, fertilisers, pesticides, and other agricultural inputs at the start of the season.</p>
+            <ul class="product-features">
+              <li>Linked to certified input suppliers</li>
+              <li>Repayment aligned to harvest period</li>
+              <li>Supports avocado, horticulture &amp; more</li>
+              <li>Available for individuals and groups</li>
+            </ul>
+            <br/><span class="product-tag">Agriculture</span>
+          </div>
+          <div class="product-card">
+            <div class="product-icon pi-gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            </div>
+            <h4>Seasonal Credit</h4>
+            <p>Short-term credit products aligned to agricultural production cycles, with repayment after harvest.</p>
+            <ul class="product-features">
+              <li>Harvest-aligned repayment schedules</li>
+              <li>Covers production and post-harvest costs</li>
+              <li>Renewable each agricultural season</li>
+              <li>Track record builds credit profile</li>
+            </ul>
+            <br/><span class="product-tag">Seasonal</span>
+          </div>
+          <div class="product-card">
+            <div class="product-icon pi-teal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h4>Value Chain Financing</h4>
+            <p>Comprehensive financing across the agricultural value chain — from farm to market, supporting every actor.</p>
+            <ul class="product-features">
+              <li>Avocado &amp; horticulture value chains</li>
+              <li>Poultry and livestock support</li>
+              <li>Market linkage embedded in product</li>
+              <li>Access to structured off-take agreements</li>
+            </ul>
+            <br/><span class="product-tag">Value Chain</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CAPACITY BUILDING -->
+      <div class="tab-panel" id="tab-capacity">
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon pi-purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+            </div>
+            <h4>Financial Literacy Training</h4>
+            <p>Practical training on budgeting, savings culture, debt management, and understanding financial products.</p>
+            <ul class="product-features">
+              <li>Group and individual sessions</li>
+              <li>Available in Swahili and English</li>
+              <li>Regular refresher workshops</li>
+              <li>Free for all active members</li>
+            </ul>
+            <br/><span class="product-tag">Training</span>
+          </div>
+          <div class="product-card">
+            <div class="product-icon pi-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h4>Business Development Services</h4>
+            <p>Coaching and advisory services for SMEs and farmer groups to strengthen business operations and strategy.</p>
+            <ul class="product-features">
+              <li>Business plan development support</li>
+              <li>Record keeping and bookkeeping</li>
+              <li>Market research and analysis</li>
+              <li>One-on-one business mentoring</li>
+            </ul>
+            <br/><span class="product-tag">Business Dev</span>
+          </div>
+          <div class="product-card">
+            <div class="product-icon pi-teal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h4>Market Access &amp; Linkages</h4>
+            <p>Connecting members to buyers, structured markets, and commercial agribusiness networks for better prices.</p>
+            <ul class="product-features">
+              <li>Access to export market buyers</li>
+              <li>Collective bargaining support</li>
+              <li>Market price information sharing</li>
+              <li>Trade fair participation facilitation</li>
+            </ul>
+            <br/><span class="product-tag">Markets</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOAN CALCULATOR -->
+  <section class="calc-section" id="calculator">
+    <div class="container">
+      <div class="calc-wrapper">
+        <div class="calc-form">
+          <div class="section-header">
+            <span class="section-tag">Plan Your Loan</span>
+            <h2>Loan Calculator</h2>
+            <p>Estimate your monthly repayment before applying. Adjust the sliders to match your needs.</p>
+          </div>
+
+          <div class="calc-group">
+            <div class="calc-label">Loan Amount <span class="calc-val" id="calcAmountVal">KES 100,000</span></div>
+            <input type="range" id="calcAmount" min="10000" max="1000000" step="10000" value="100000" />
+          </div>
+          <div class="calc-group">
+            <div class="calc-label">Loan Term <span class="calc-val" id="calcTermVal">12 months</span></div>
+            <input type="range" id="calcTerm" min="3" max="36" step="1" value="12" />
+          </div>
+          <div class="calc-group">
+            <div class="calc-label">Annual Interest Rate <span class="calc-val" id="calcRateVal">14%</span></div>
+            <input type="range" id="calcRate" min="10" max="24" step="0.5" value="14" />
+          </div>
+
+          <p style="font-size:.8rem; color: var(--gray-400); margin-top: 8px;">* Rates shown are indicative. Contact us for your personalised rate.</p>
+          <br/>
+          <a href="contact.html" class="btn btn-primary">Apply for This Loan</a>
+        </div>
+
+        <div class="calc-results">
+          <h3>Your Estimate</h3>
+          <div class="result-item">
+            <div class="result-label">Monthly Repayment</div>
+            <div class="result-value highlight" id="resultMonthly">KES 0</div>
+          </div>
+          <div class="result-divider"></div>
+          <div class="result-item">
+            <div class="result-label">Total Repayment</div>
+            <div class="result-value" id="resultTotal">KES 0</div>
+          </div>
+          <div class="result-item">
+            <div class="result-label">Total Interest</div>
+            <div class="result-value" id="resultInterest">KES 0</div>
+          </div>
+          <p class="calc-note">This is an estimate only. Actual repayments may vary based on your final loan terms, fees, and insurance. Speak to our loan officers for a full breakdown.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>Ready to apply for a product?</h2>
+        <p>Our loan officers are ready to guide you through the right product for your needs.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary btn-lg">Talk to Us Today</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo"><div class="logo-icon">K</div><div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div></div>
+        <p>'Simplifying money matters for rural wealth creation'</p>
+        <div class="footer-socials"><a class="social-btn" href="#">f</a><a class="social-btn" href="#">t</a><a class="social-btn" href="#">w</a><a class="social-btn" href="#">in</a></div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a><a href="about.html">About Us</a>
+        <a href="products.html">Products</a><a href="agribusiness.html">Agribusiness</a>
+        <a href="membership.html">Membership</a><a href="news.html">News</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <a href="#tab-savings">Savings Accounts</a><a href="#tab-loans">Loan Products</a>
+        <a href="#tab-agri">Agribusiness Financing</a><a href="#tab-capacity">Capacity Building</a>
+        <a href="#calculator">Loan Calculator</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Shanbad Building, Machakos</p>
+        <p><a href="tel:+254795054992">+254 795 054 992</a></p>
+        <p><a href="tel:+254722957416">+254 722 957 416</a></p>
+        <p><a href="mailto:admin@kesmesacco.com">admin@kesmesacco.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Kenya Small and Micro Entrepreneurs (KESME) SACCO Ltd. All rights reserved.</p>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/254795054992" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="wa-tooltip">Chat with us</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ':*)",
+      "Bash(xargs rm:*)",
+      "Bash(find . -path ./venv -prune -o -name \"*.pyc\" -print -delete)",
+      "Bash(rm -rf \"c:/Users/LOVENA/OneDrive/Desktop/kesme sacco/backend/venv/Lib/site-packages/rest_framework\")",
+      "Bash(rm -rf \"c:/Users/LOVENA/OneDrive/Desktop/kesme sacco/backend/venv/Lib/site-packages/djangorestframework-3.17.1.dist-info\")",
+      "Bash(npm install:*)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(npm run:*)"
+    ]
+  }
+}
