@@ -12,6 +12,7 @@ build/
 *.log
 .env
 .env.*
+!.env.example
 
 # Virtual environment
 backend/venv/
