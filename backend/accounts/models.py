@@ -23,6 +23,8 @@ class Member(AbstractUser):
         INDIVIDUAL  = 'individual',  'Individual'
         GROUP       = 'group',       'Group / Chama'
         COOPERATIVE = 'cooperative', 'Cooperative'
+        FARMER      = 'farmer',      'Smallholder Farmer'
+        SME         = 'sme',         'Agribusiness SME'
 
     class MemberStatus(models.TextChoices):
         PENDING   = 'pending',   'Pending Approval'
@@ -44,6 +46,7 @@ class Member(AbstractUser):
     address         = models.TextField(blank=True)
     occupation      = models.CharField(max_length=100, blank=True)
     profile_photo   = models.ImageField(upload_to=member_photo_path, null=True, blank=True)
+    id_photo        = models.ImageField(upload_to='members/id_photos/', null=True, blank=True)
 
     # ── Membership ────────────────────────────────────────────────────────
     member_type     = models.CharField(max_length=15, choices=MemberType.choices, default=MemberType.INDIVIDUAL)

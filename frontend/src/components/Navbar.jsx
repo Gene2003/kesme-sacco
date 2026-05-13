@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, LogIn, LayoutDashboard } from 'lucide-react'
+import { useAuth } from '../contexts/AuthContext'
 
 const links = [
   { to: '/',            label: 'Home' },
@@ -16,6 +17,7 @@ export default function Navbar() {
   const [scrolled, setScrolled]   = useState(false)
   const [menuOpen, setMenuOpen]   = useState(false)
   const { pathname }              = useLocation()
+  const { user }                  = useAuth()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -64,9 +66,20 @@ export default function Navbar() {
 
         {/* CTA + Hamburger */}
         <div className="flex items-center gap-3">
-          <Link to="/membership" className="hidden lg:inline-flex btn-gold text-sm py-2.5 px-5">
-            Join Now
-          </Link>
+          {user ? (
+            <Link to="/portal" className="hidden lg:inline-flex items-center gap-2 btn-gold text-sm py-2.5 px-5">
+              <LayoutDashboard size={16} /> My Portal
+            </Link>
+          ) : (
+            <>
+              <Link to="/login" className="hidden lg:inline-flex items-center gap-2 text-white/90 hover:text-gold text-sm font-poppins font-medium px-3 py-2 transition-colors">
+                <LogIn size={16} /> Sign In
+              </Link>
+              <Link to="/register" className="hidden lg:inline-flex btn-gold text-sm py-2.5 px-5">
+                Join Now
+              </Link>
+            </>
+          )}
           <button
             onClick={() => setMenuOpen(v => !v)}
             className="lg:hidden text-white p-2 hover:bg-white/10 rounded-lg transition"
@@ -93,9 +106,14 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
-          <Link to="/membership" className="btn-gold mt-3 text-sm py-3 text-center">
-            Join Now
-          </Link>
+          {user ? (
+            <Link to="/portal" className="btn-gold mt-3 text-sm py-3 text-center">My Portal</Link>
+          ) : (
+            <>
+              <Link to="/login" className="text-white/90 hover:text-gold text-sm font-poppins font-medium px-4 py-3 mt-2">Sign In</Link>
+              <Link to="/register" className="btn-gold mt-2 text-sm py-3 text-center">Join Now</Link>
+            </>
+          )}
         </div>
       </div>
     </header>

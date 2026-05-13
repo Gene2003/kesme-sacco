@@ -1,7 +1,29 @@
 """accounts/serializers.py"""
 from rest_framework import serializers
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from django.contrib.auth.password_validation import validate_password
 from .models import Member
+
+
+class MemberTokenObtainSerializer(TokenObtainPairSerializer):
+    """JWT login that blocks members whose status is not 'active'."""
+
+    def validate(self, attrs):
+        data = super().validate(attrs)
+        user = self.user
+        if not user.is_staff and user.status != Member.MemberStatus.ACTIVE:
+            messages = {
+                Member.MemberStatus.PENDING:   'Your account is pending admin approval.',
+                Member.MemberStatus.SUSPENDED: 'Your account has been suspended.',
+                Member.MemberStatus.CLOSED:    'Your account is closed.',
+            }
+            raise serializers.ValidationError(
+                messages.get(user.status, 'Account is not active.')
+            )
+        data['member_type'] = user.member_type
+        data['member_number'] = user.member_number
+        data['full_name'] = user.get_full_name() or user.username
+        return data
 
 
 class MemberListSerializer(serializers.ModelSerializer):
@@ -60,6 +82,7 @@ class MemberRegistrationSerializer(serializers.ModelSerializer):
             'id_number', 'phone', 'date_of_birth', 'gender',
             'address', 'occupation', 'member_type', 'group_name',
             'next_of_kin_name', 'next_of_kin_phone', 'next_of_kin_relationship',
+            'profile_photo', 'id_photo',
             'password', 'password2',
         ]
 

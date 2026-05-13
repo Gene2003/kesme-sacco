@@ -16,7 +16,10 @@
       "Bash(nslookup -type=A www.kesmesacco.com 8.8.8.8)",
       "Bash(nslookup -type=NS kesmesacco.com 1.1.1.1)",
       "Bash(nslookup kesmesacco.com 1.1.1.1)",
-      "Bash(nslookup -type=NS kesmesacco.com a.gtld-servers.net)"
+      "Bash(nslookup -type=NS kesmesacco.com a.gtld-servers.net)",
+      "Bash(./venv/Scripts/pip.exe install *)",
+      "Bash(./venv/Scripts/python.exe manage.py makemigrations accounts)",
+      "Bash(./venv/Scripts/python.exe manage.py migrate)"
     ]
   }
 }

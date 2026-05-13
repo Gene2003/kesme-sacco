@@ -167,9 +167,11 @@ SIMPLE_JWT = {
 # ─────────────────────────────────────────────
 # CORS
 # ─────────────────────────────────────────────
-CORS_ALLOWED_ORIGINS = config(
-    'CORS_ALLOWED_ORIGINS',
-    default='http://localhost:3000,http://127.0.0.1:5500'
-).split(',')
+CORS_ALLOWED_ORIGINS = [
+    o.strip() for o in config(
+        'CORS_ALLOWED_ORIGINS',
+        default='http://localhost:5173,http://127.0.0.1:5173'
+    ).split(',') if o.strip()
+]
 
 CORS_ALLOW_CREDENTIALS = True
