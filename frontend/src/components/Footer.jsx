@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 rounded-xl bg-gold flex items-center justify-center font-poppins font-black text-xl text-green-dark">K</div>
+            <img src="/logo.png" alt="KESME SACCO Ltd" className="h-12 w-auto" />
             <div className="leading-tight">
               <div className="font-poppins font-black text-white text-base tracking-wide">KESME</div>
               <div className="font-opensans text-gold text-[10px] tracking-widest uppercase">SACCO LTD</div>

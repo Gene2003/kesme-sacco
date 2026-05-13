@@ -34,9 +34,11 @@ export default function Navbar() {
       <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-xl bg-gold flex items-center justify-center font-poppins font-black text-xl text-green-dark group-hover:scale-105 transition-transform">
-            K
-          </div>
+          <img
+            src="/logo.png"
+            alt="KESME SACCO Ltd"
+            className="h-12 w-auto group-hover:scale-105 transition-transform"
+          />
           <div className="leading-tight">
             <div className="font-poppins font-black text-white text-base tracking-wide">KESME</div>
             <div className="font-opensans text-gold text-[10px] tracking-widest uppercase">SACCO LTD</div>
