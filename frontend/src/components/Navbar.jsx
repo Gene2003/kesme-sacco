@@ -37,7 +37,7 @@ export default function Navbar() {
           <img
             src="/logo.png"
             alt="KESME SACCO Ltd"
-            className="h-12 w-auto group-hover:scale-105 transition-transform"
+            className="h-16 w-auto group-hover:scale-105 transition-transform"
           />
           <div className="leading-tight">
             <div className="font-poppins font-black text-white text-base tracking-wide">KESME</div>
