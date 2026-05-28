@@ -6,8 +6,23 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter, OrderingFilter
 from django.utils import timezone
 
-from .models import ContactInquiry
-from .serializers import ContactInquirySerializer, ContactInquiryAdminSerializer
+from .models import ContactInquiry, WaitlistEntry
+from .serializers import ContactInquirySerializer, ContactInquiryAdminSerializer, WaitlistEntrySerializer
+
+
+class WaitlistEntryViewSet(viewsets.ModelViewSet):
+    queryset = WaitlistEntry.objects.all()
+    serializer_class = WaitlistEntrySerializer
+    filter_backends  = [DjangoFilterBackend, SearchFilter, OrderingFilter]
+    filterset_fields = ['status']
+    search_fields    = ['name', 'email', 'phone']
+    ordering_fields  = ['created_at']
+    http_method_names = ['get', 'post', 'patch', 'delete', 'head', 'options']
+
+    def get_permissions(self):
+        if self.action == 'create':
+            return [permissions.AllowAny()]
+        return [permissions.IsAdminUser()]
 
 
 class ContactInquiryViewSet(viewsets.ModelViewSet):

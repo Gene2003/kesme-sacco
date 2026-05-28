@@ -42,3 +42,27 @@ class ContactInquiry(models.Model):
     @property
     def full_name(self):
         return f'{self.first_name} {self.last_name}'
+
+
+class WaitlistEntry(models.Model):
+    """Pre-launch waiting list signups."""
+
+    class Status(models.TextChoices):
+        NEW       = 'new',       'New'
+        NOTIFIED  = 'notified',  'Notified'
+        CONVERTED = 'converted', 'Converted to Member'
+
+    name       = models.CharField(max_length=120)
+    email      = models.EmailField()
+    phone      = models.CharField(max_length=20)
+    message    = models.TextField(blank=True)
+    status     = models.CharField(max_length=15, choices=Status.choices, default=Status.NEW)
+    created_at = models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        verbose_name = 'Waitlist Entry'
+        verbose_name_plural = 'Waitlist Entries'
+        ordering = ['-created_at']
+
+    def __str__(self):
+        return f'{self.name} – {self.email}'
