@@ -3,7 +3,7 @@ import { Phone, Mail, Globe, MapPin } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-green-dark text-white">
+    <footer className="bg-primary-black text-white">
       <div className="max-w-[1200px] mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div>
@@ -11,7 +11,7 @@ export default function Footer() {
             <img src="/logo.png" alt="KESME SACCO Ltd" className="h-12 w-auto" />
             <div className="leading-tight">
               <div className="font-poppins font-black text-white text-base tracking-wide">KESME</div>
-              <div className="font-opensans text-gold text-[10px] tracking-widest uppercase">SACCO LTD</div>
+              <div className="font-opensans text-primary-orange text-[10px] tracking-widest uppercase font-bold">SACCO LTD</div>
             </div>
           </div>
           <p className="text-white/70 text-sm leading-relaxed mb-5">
@@ -20,7 +20,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-2">
             {['f','t','w','in'].map(s => (
-              <a key={s} href="#" className="w-9 h-9 rounded-lg bg-white/10 hover:bg-gold hover:text-green-dark flex items-center justify-center text-xs font-bold transition-all duration-200 text-white">
+              <a key={s} href="#" className="w-9 h-9 rounded-lg bg-white/10 hover:bg-primary-orange hover:text-primary-black flex items-center justify-center text-xs font-bold transition-all duration-200 text-white">
                 {s}
               </a>
             ))}
@@ -36,7 +36,7 @@ export default function Footer() {
               ['/agribusiness','Agribusiness'],['/membership','Membership'],
               ['/news','News & Updates'],['/contact','Contact']
             ].map(([to,label]) => (
-              <Link key={to} to={to} className="text-white/65 hover:text-gold text-sm transition-colors duration-200">
+              <Link key={to} to={to} className="text-white/65 hover:text-primary-orange text-sm transition-colors duration-200">
                 {label}
               </Link>
             ))}
@@ -48,7 +48,7 @@ export default function Footer() {
           <h4 className="font-poppins font-bold text-white mb-4 text-sm uppercase tracking-wider">Services</h4>
           <div className="flex flex-col gap-2">
             {['Savings Accounts','Loans & Credit','Agribusiness Loans','SME Financing','Financial Training','Market Linkages'].map(s => (
-              <Link key={s} to="/products" className="text-white/65 hover:text-gold text-sm transition-colors duration-200">
+              <Link key={s} to="/products" className="text-white/65 hover:text-primary-orange text-sm transition-colors duration-200">
                 {s}
               </Link>
             ))}
@@ -60,23 +60,23 @@ export default function Footer() {
           <h4 className="font-poppins font-bold text-white mb-4 text-sm uppercase tracking-wider">Contact</h4>
           <div className="flex flex-col gap-3">
             <div className="flex gap-3 items-start">
-              <MapPin size={16} className="text-gold mt-0.5 shrink-0" />
+              <MapPin size={16} className="text-primary-orange mt-0.5 shrink-0" />
               <span className="text-white/65 text-sm">Shanbad Building, Machakos, Kenya</span>
             </div>
             <div className="flex gap-3 items-center">
-              <Phone size={16} className="text-gold shrink-0" />
+              <Phone size={16} className="text-primary-orange shrink-0" />
               <div className="flex flex-col gap-1">
-                <a href="tel:+254795054992" className="text-white/65 hover:text-gold text-sm transition-colors">+254 795 054 992</a>
-                <a href="tel:+254722957416" className="text-white/65 hover:text-gold text-sm transition-colors">+254 722 957 416</a>
+                <a href="tel:+254795054992" className="text-white/65 hover:text-primary-orange text-sm transition-colors">+254 795 054 992</a>
+                <a href="tel:+254722957416" className="text-white/65 hover:text-primary-orange text-sm transition-colors">+254 722 957 416</a>
               </div>
             </div>
             <div className="flex gap-3 items-center">
-              <Mail size={16} className="text-gold shrink-0" />
-              <a href="mailto:admin@kesmesacco.com" className="text-white/65 hover:text-gold text-sm transition-colors">admin@kesmesacco.com</a>
+              <Mail size={16} className="text-primary-orange shrink-0" />
+              <a href="mailto:admin@kesmesacco.com" className="text-white/65 hover:text-primary-orange text-sm transition-colors">admin@kesmesacco.com</a>
             </div>
             <div className="flex gap-3 items-center">
-              <Globe size={16} className="text-gold shrink-0" />
-              <a href="http://www.kesmesacco.com" target="_blank" rel="noopener" className="text-white/65 hover:text-gold text-sm transition-colors">www.kesmesacco.com</a>
+              <Globe size={16} className="text-primary-orange shrink-0" />
+              <a href="http://www.kesmesacco.com" target="_blank" rel="noopener" className="text-white/65 hover:text-primary-orange text-sm transition-colors">www.kesmesacco.com</a>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-[1200px] mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-white/50 text-xs">© 2026 Kenya Small and Micro Entrepreneurs (KESME) SACCO Ltd. All rights reserved.</p>
-          <a href="#" className="text-white/50 hover:text-gold text-xs transition-colors">Privacy Policy</a>
+          <a href="#" className="text-white/50 hover:text-primary-orange text-xs transition-colors">Privacy Policy</a>
         </div>
       </div>
     </footer>

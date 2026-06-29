@@ -4,16 +4,26 @@ export default {
   theme: {
     extend: {
       colors: {
+        // New brand colors
+        primary: {
+          orange:  '#F7931E',
+          green:   '#1FA34A',
+          black:   '#111111',
+          dark:    '#333333',
+          light:   '#9E9E9E',
+          pale:    '#F5F5F5',
+        },
+        // Legacy colors mapped to new brand
         green: {
-          DEFAULT: '#2E7D32',
-          dark:    '#1B5E20',
-          light:   '#43A047',
-          pale:    '#E8F5E9',
+          DEFAULT: '#1FA34A',
+          dark:    '#111111',
+          light:   '#1FA34A',
+          pale:    '#F5F5F5',
         },
         gold: {
-          DEFAULT: '#F9A825',
-          dark:    '#F57F17',
-          pale:    '#FFFDE7',
+          DEFAULT: '#F7931E',
+          dark:    '#F7931E',
+          pale:    '#F5F5F5',
         },
       },
       fontFamily: {

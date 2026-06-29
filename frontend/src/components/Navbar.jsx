@@ -28,7 +28,7 @@ export default function Navbar() {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled || pathname !== '/'
-        ? 'bg-green-dark shadow-lg py-3'
+        ? 'bg-primary-black shadow-lg py-3'
         : 'bg-transparent py-5'
     }`}>
       <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-between">
@@ -37,11 +37,11 @@ export default function Navbar() {
           <img
             src="/logo.png"
             alt="KESME SACCO Ltd"
-            className="h-16 w-auto group-hover:scale-105 transition-transform"
+            className="h-12 w-auto group-hover:scale-105 transition-transform"
           />
-          <div className="leading-tight">
-            <div className="font-poppins font-black text-white text-base tracking-wide">KESME</div>
-            <div className="font-opensans text-gold text-[10px] tracking-widest uppercase">SACCO LTD</div>
+          <div className="leading-tight hidden sm:block">
+            <div className="font-poppins font-black text-white text-sm tracking-wide">KESME</div>
+            <div className="font-opensans text-primary-orange text-[9px] tracking-widest uppercase font-bold">SACCO LTD</div>
           </div>
         </Link>
 
@@ -53,7 +53,7 @@ export default function Navbar() {
               to={l.to}
               className={`px-4 py-2 rounded-lg font-poppins font-medium text-sm transition-all duration-200 ${
                 pathname === l.to
-                  ? 'text-gold bg-white/10'
+                  ? 'text-primary-orange bg-white/10'
                   : 'text-white/85 hover:text-white hover:bg-white/10'
               }`}
             >
@@ -64,7 +64,7 @@ export default function Navbar() {
 
         {/* CTA + Hamburger */}
         <div className="flex items-center gap-3">
-          <Link to="/waitlist" className="hidden lg:inline-flex items-center gap-2 btn-gold text-sm py-2.5 px-5">
+          <Link to="/waitlist" className="hidden lg:inline-flex items-center gap-2 bg-primary-orange hover:opacity-90 text-primary-black font-poppins font-bold text-sm py-2.5 px-5 rounded-lg transition-all duration-200">
             <ClipboardList size={16} /> Join the Waiting List
           </Link>
           <button
@@ -79,21 +79,21 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div className={`lg:hidden transition-all duration-300 overflow-hidden ${menuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
-        <div className="bg-green-dark border-t border-white/10 px-6 pb-6 pt-2 flex flex-col gap-1">
+        <div className="bg-primary-black border-t border-white/10 px-6 pb-6 pt-2 flex flex-col gap-1">
           {links.map(l => (
             <Link
               key={l.to}
               to={l.to}
               className={`px-4 py-3 rounded-lg font-poppins font-medium text-sm transition-all ${
                 pathname === l.to
-                  ? 'text-gold bg-white/10'
+                  ? 'text-primary-orange bg-white/10'
                   : 'text-white/85 hover:text-white hover:bg-white/10'
               }`}
             >
               {l.label}
             </Link>
           ))}
-          <Link to="/waitlist" className="btn-gold mt-3 text-sm py-3 text-center">
+          <Link to="/waitlist" className="bg-primary-orange hover:opacity-90 text-primary-black font-poppins font-bold text-sm py-3 rounded-lg text-center transition-all duration-200 mt-3">
             Join the Waiting List
           </Link>
         </div>
