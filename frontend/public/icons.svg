@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 75" width="300" height="75" style="display: none;">
+  <!-- Shield with checkmark -->
+  <symbol id="icon-shield" viewBox="0 0 64 64">
+    <path d="M32 4L8 16V28C8 44 32 60 32 60S56 44 56 28V16L32 4Z" fill="none" stroke="#1FA34A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M22 32L30 40L42 26" fill="none" stroke="#F7931E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <!-- Chart/Trending -->
+  <symbol id="icon-chart" viewBox="0 0 64 64">
+    <path d="M12 44V20" fill="none" stroke="#1FA34A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M28 44V12" fill="none" stroke="#1FA34A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M44 44V28" fill="none" stroke="#F7931E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8 48H56" fill="none" stroke="#1FA34A" stroke-width="2" stroke-linecap="round"/>
+    <path d="M12 20L28 12L44 28" fill="none" stroke="#1FA34A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <!-- Handshake -->
+  <symbol id="icon-handshake" viewBox="0 0 64 64">
+    <path d="M12 36C12 28 18 24 24 24C28 24 32 26 34 30" fill="none" stroke="#F7931E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M52 36C52 28 46 24 40 24C36 24 32 26 30 30" fill="none" stroke="#1FA34A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24 24C28 28 28 36 24 40" fill="none" stroke="#1FA34A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M40 24C36 28 36 36 40 40" fill="none" stroke="#F7931E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="20" cy="44" r="4" fill="#F7931E"/>
+    <circle cx="44" cy="44" r="4" fill="#1FA34A"/>
+  </symbol>
+
+  <!-- Lightbulb -->
+  <symbol id="icon-lightbulb" viewBox="0 0 64 64">
+    <path d="M32 8C22 8 14 16 14 26C14 34 20 40 24 44H40C44 40 50 34 50 26C50 16 42 8 32 8Z" fill="none" stroke="#F7931E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M22 44H42V48C42 50.2 40.2 52 38 52H26C23.8 52 22 50.2 22 48V44Z" fill="none" stroke="#1FA34A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M28 52H36" stroke="#1FA34A" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="32" cy="24" r="3" fill="#F7931E"/>
+    <!-- Sun rays -->
+    <line x1="32" y1="2" x2="32" y2="6" stroke="#F7931E" stroke-width="2" stroke-linecap="round"/>
+    <line x1="50" y1="14" x2="47" y2="17" stroke="#F7931E" stroke-width="2" stroke-linecap="round"/>
+    <line x1="58" y1="26" x2="54" y2="26" stroke="#F7931E" stroke-width="2" stroke-linecap="round"/>
+    <line x1="14" y1="26" x2="10" y2="26" stroke="#F7931E" stroke-width="2" stroke-linecap="round"/>
+    <line x1="14" y1="14" x2="17" y2="17" stroke="#F7931E" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+</svg>

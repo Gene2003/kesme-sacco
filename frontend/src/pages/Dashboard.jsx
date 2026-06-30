@@ -21,7 +21,7 @@ export default function Dashboard() {
       <header className="bg-green-dark text-white shadow-md">
         <div className="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src="/logo.png" alt="KESME SACCO" className="h-10 w-auto" />
+            <img src="/kesme-logo.png" alt="KESME SACCO" className="h-10 w-auto" />
             <div className="leading-tight">
               <div className="font-poppins font-black text-base tracking-wide">KESME</div>
               <div className="font-opensans text-gold text-[10px] tracking-widest uppercase">Member Portal</div>

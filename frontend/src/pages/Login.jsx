@@ -34,7 +34,7 @@ export default function Login() {
     <div className="min-h-screen bg-gradient-to-br from-green-dark via-green to-green-light flex items-center justify-center px-4 py-20">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden">
         <div className="bg-green-dark px-8 py-6 text-center">
-          <img src="/logo.png" alt="KESME SACCO" className="h-14 w-auto mx-auto mb-3" />
+          <img src="/kesme-logo.png" alt="KESME SACCO" className="h-14 w-auto mx-auto mb-3" />
           <h1 className="font-poppins font-bold text-white text-xl">Member Portal Login</h1>
           <p className="text-white/70 text-sm mt-1">Welcome back to KESME SACCO</p>
         </div>

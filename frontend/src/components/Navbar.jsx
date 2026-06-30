@@ -35,7 +35,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 group">
           <img
-            src="/logo.png"
+            src="/kesme-logo.png"
             alt="KESME SACCO Ltd"
             className="h-12 w-auto group-hover:scale-105 transition-transform"
           />

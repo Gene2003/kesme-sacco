@@ -73,6 +73,9 @@ export default function Home() {
     <main>
       {/* HERO */}
       <section className="relative min-h-screen bg-green-dark flex items-center overflow-hidden">
+        <div className="absolute inset-0 opacity-8 pointer-events-none">
+          <div style={{backgroundImage: 'url(/brand-pattern.png)', backgroundSize: 'cover', backgroundRepeat: 'repeat'}} className="w-full h-full" />
+        </div>
         <div className="hero-pattern" />
         <div className="absolute inset-0 bg-gradient-to-br from-green-dark via-green to-green-dark opacity-90" />
         <div className="relative z-10 max-w-[1200px] mx-auto px-6 py-32">
@@ -153,8 +156,11 @@ export default function Home() {
       </section>
 
       {/* SERVICES */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-[1200px] mx-auto px-6">
+      <section className="py-24 bg-gray-50 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5 pointer-events-none">
+          <div className="absolute inset-0" style={{backgroundImage: 'url(/brand-pattern.png)', backgroundSize: 'cover'}} />
+        </div>
+        <div className="max-w-[1200px] mx-auto px-6 relative z-10">
           <div className="text-center mb-14">
             <span className="section-tag">What We Offer</span>
             <h2 className="font-poppins font-black text-3xl text-green-dark mb-3">Our Key Services</h2>
@@ -162,7 +168,7 @@ export default function Home() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map(s => (
-              <div key={s.title} className="card border border-gray-100">
+              <div key={s.title} className="card border border-gray-100 hover:border-gold hover:shadow-lg transition-all">
                 <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-4 ${s.color}`}>{s.icon}</div>
                 <h4 className="font-poppins font-bold text-green-dark mb-2">{s.title}</h4>
                 <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>

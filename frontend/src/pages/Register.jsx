@@ -77,7 +77,7 @@ export default function Register() {
     <div className="min-h-screen bg-gradient-to-br from-green-dark via-green to-green-light px-4 py-12">
       <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden">
         <div className="bg-green-dark px-8 py-6 text-center">
-          <img src="/logo.png" alt="KESME SACCO" className="h-14 w-auto mx-auto mb-3" />
+          <img src="/kesme-logo.png" alt="KESME SACCO" className="h-14 w-auto mx-auto mb-3" />
           <h1 className="font-poppins font-bold text-white text-2xl">Become a Member</h1>
           <p className="text-white/70 text-sm mt-1">Register to access loans, savings, and member benefits</p>
         </div>
