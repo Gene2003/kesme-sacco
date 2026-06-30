@@ -34,9 +34,7 @@ export default function About() {
     <main>
       {/* PAGE HERO */}
       <section className="relative bg-green-dark pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-8 pointer-events-none">
-          <div style={{backgroundImage: 'url(/brand-pattern.png)', backgroundSize: 'cover', backgroundRepeat: 'repeat'}} className="w-full h-full" />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-green-dark via-green to-green-dark opacity-60" />
         <div className="hero-pattern" />
         <div className="relative z-10 max-w-[1200px] mx-auto px-6">
           <div className="flex items-center gap-2 text-white/50 text-sm mb-4">
