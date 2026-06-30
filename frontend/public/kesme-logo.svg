@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
-  <!-- Orange top chevron/parallelogram -->
-  <path d="M 25 20 L 55 20 L 35 55 L 5 55 Z" fill="#F7931E"/>
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Orange parallelogram (top) -->
+  <polygon points="40,20 85,20 105,50 60,50" fill="#F7931E"/>
   
-  <!-- Green bottom chevron/parallelogram -->
-  <path d="M 15 55 L 45 55 L 25 90 L -5 90 Z" fill="#1FA34A"/>
+  <!-- Green parallelogram (bottom) -->
+  <polygon points="60,50 105,50 85,80 40,80" fill="#1FA34A"/>
 </svg>
