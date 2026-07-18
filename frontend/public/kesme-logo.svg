@@ -1,7 +1,0 @@
-<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
-  <!-- Orange parallelogram (top) -->
-  <polygon points="40,20 85,20 105,50 60,50" fill="#F7931E"/>
-  
-  <!-- Green parallelogram (bottom) -->
-  <polygon points="60,50 105,50 85,80 40,80" fill="#1FA34A"/>
-</svg>
