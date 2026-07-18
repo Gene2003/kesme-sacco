@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: #1A2E1A;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .section-tag {
+    @apply inline-block text-xs font-semibold tracking-widest uppercase text-green bg-green-pale px-3 py-1 rounded-full mb-3;
+  }
+  .section-tag-gold {
+    @apply inline-block text-xs font-semibold tracking-widest uppercase text-gold-dark bg-gold-pale px-3 py-1 rounded-full mb-3;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3 rounded-lg font-poppins font-semibold text-sm bg-green text-white border-2 border-green transition-all duration-300 hover:bg-green-dark hover:border-green-dark hover:-translate-y-0.5 hover:shadow-lg;
+  }
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3 rounded-lg font-poppins font-semibold text-sm bg-gold text-gray-900 border-2 border-gold transition-all duration-300 hover:bg-gold-dark hover:border-gold-dark hover:text-white hover:-translate-y-0.5;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3 rounded-lg font-poppins font-semibold text-sm bg-transparent text-white border-2 border-white transition-all duration-300 hover:bg-white hover:text-green-dark hover:-translate-y-0.5;
+  }
+  .btn-outline-green {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3 rounded-lg font-poppins font-semibold text-sm bg-transparent text-green border-2 border-green transition-all duration-300 hover:bg-green hover:text-white hover:-translate-y-0.5;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+}
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+
+/* WhatsApp float */
+.whatsapp-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 999;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,.4);
+  transition: all .3s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 28px rgba(37,211,102,.5);
+}
+.whatsapp-float svg {
+  width: 28px;
+  height: 28px;
+  fill: white;
+}
+
+/* Hero pattern */
+.hero-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 20% 50%, rgba(249,168,37,0.08) 0%, transparent 60%),
+                    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.05) 0%, transparent 50%);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f1; }
+::-webkit-scrollbar-thumb { background: #2E7D32; border-radius: 3px; }
