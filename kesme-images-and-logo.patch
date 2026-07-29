@@ -1,0 +1,447 @@
+diff --git a/about.html b/about.html
+index c7e424b..e55e136 100644
+--- a/about.html
++++ b/about.html
+@@ -12,7 +12,7 @@
+   <header class="navbar scrolled" id="navbar">
+     <div class="container nav-inner">
+       <a href="index.html" class="logo">
+-        <div class="logo-icon">K</div>
++        <img src="public/kesme-logo.svg" alt="KESME SACCO Ltd" class="logo-img" />
+         <div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div>
+       </a>
+       <nav class="nav-links">
+@@ -41,6 +41,8 @@
+ 
+   <!-- PAGE HERO -->
+   <section class="page-hero">
++    <img src="https://images.unsplash.com/photo-1509099381441-ea3c0cf98b94?w=1800&q=80&auto=format&fit=crop" alt="Kenyan farmer planting crops" class="page-hero-img" />
++    <div class="page-hero-overlay"></div>
+     <div class="hero-pattern"></div>
+     <div class="container page-hero-content">
+       <div class="breadcrumb">
+@@ -246,7 +248,7 @@
+   <footer class="footer">
+     <div class="container footer-inner">
+       <div class="footer-brand">
+-        <div class="logo"><div class="logo-icon">K</div><div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div></div>
++        <div class="logo"><img src="public/kesme-logo.svg" alt="KESME SACCO Ltd" class="logo-img-footer" /><div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div></div>
+         <p>'Simplifying money matters for rural wealth creation'</p>
+         <div class="footer-socials">
+           <a class="social-btn" href="#">f</a><a class="social-btn" href="#">t</a>
+diff --git a/agribusiness.html b/agribusiness.html
+index 9b4e00e..b991de0 100644
+--- a/agribusiness.html
++++ b/agribusiness.html
+@@ -12,7 +12,7 @@
+   <header class="navbar scrolled" id="navbar">
+     <div class="container nav-inner">
+       <a href="index.html" class="logo">
+-        <div class="logo-icon">K</div>
++        <img src="public/kesme-logo.svg" alt="KESME SACCO Ltd" class="logo-img" />
+         <div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div>
+       </a>
+       <nav class="nav-links">
+@@ -34,6 +34,8 @@
+ 
+   <!-- PAGE HERO -->
+   <section class="page-hero">
++    <img src="https://images.unsplash.com/photo-1530507629858-e4977d30e9e0?w=1800&q=80&auto=format&fit=crop" alt="Kenyan farmer harvesting crops" class="page-hero-img" />
++    <div class="page-hero-overlay"></div>
+     <div class="hero-pattern"></div>
+     <div class="container page-hero-content">
+       <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span class="current">Agribusiness &amp; Value Chains</span></div>
+@@ -55,12 +57,7 @@
+         <a href="contact.html" class="btn btn-primary">Discuss Agri-Financing</a>
+       </div>
+       <div class="agri-img">
+-        <div class="img-placeholder" style="display:flex; flex-direction:column; align-items:center; gap:16px; color: var(--green);">
+-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:80px;height:80px;opacity:.5;">
+-            <path d="M12 22V12M12 12C12 7 7 2 2 2c0 5 5 10 10 10zM12 12c0-5 5-10 10-10-0 5-5 10-10 10z"/>
+-          </svg>
+-          <p style="font-family:'Poppins',sans-serif;font-weight:600;opacity:.5;font-size:.9rem;">Agriculture Financing</p>
+-        </div>
++        <img src="https://images.unsplash.com/photo-1741940365425-1b9a575d373e?w=1000&q=80&auto=format&fit=crop" alt="Kenyan farmer carrying harvested produce" />
+       </div>
+     </div>
+   </section>
+@@ -212,7 +209,7 @@
+   <footer class="footer">
+     <div class="container footer-inner">
+       <div class="footer-brand">
+-        <div class="logo"><div class="logo-icon">K</div><div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div></div>
++        <div class="logo"><img src="public/kesme-logo.svg" alt="KESME SACCO Ltd" class="logo-img-footer" /><div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div></div>
+         <p>'Simplifying money matters for rural wealth creation'</p>
+         <div class="footer-socials"><a class="social-btn" href="#">f</a><a class="social-btn" href="#">t</a><a class="social-btn" href="#">w</a><a class="social-btn" href="#">in</a></div>
+       </div>
+diff --git a/contact.html b/contact.html
+index 4340415..d0c1e8f 100644
+--- a/contact.html
++++ b/contact.html
+@@ -12,7 +12,7 @@
+   <header class="navbar scrolled" id="navbar">
+     <div class="container nav-inner">
+       <a href="index.html" class="logo">
+-        <div class="logo-icon">K</div>
++        <img src="public/kesme-logo.svg" alt="KESME SACCO Ltd" class="logo-img" />
+         <div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div>
+       </a>
+       <nav class="nav-links">
+@@ -35,6 +35,8 @@
+ 
+   <!-- PAGE HERO -->
+   <section class="page-hero">
++    <img src="https://images.unsplash.com/photo-1710149484964-d966b771c204?w=1800&q=80&auto=format&fit=crop" alt="Kenyan farmer holding a handful of grain" class="page-hero-img" />
++    <div class="page-hero-overlay"></div>
+     <div class="hero-pattern"></div>
+     <div class="container page-hero-content">
+       <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span class="current">Contact Us</span></div>
+@@ -180,7 +182,7 @@
+   <footer class="footer">
+     <div class="container footer-inner">
+       <div class="footer-brand">
+-        <div class="logo"><div class="logo-icon">K</div><div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div></div>
++        <div class="logo"><img src="public/kesme-logo.svg" alt="KESME SACCO Ltd" class="logo-img-footer" /><div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div></div>
+         <p>'Simplifying money matters for rural wealth creation'</p>
+         <div class="footer-socials"><a class="social-btn" href="#">f</a><a class="social-btn" href="#">t</a><a class="social-btn" href="#">w</a><a class="social-btn" href="#">in</a></div>
+       </div>
+diff --git a/membership.html b/membership.html
+index e0a4076..7232684 100644
+--- a/membership.html
++++ b/membership.html
+@@ -12,7 +12,7 @@
+   <header class="navbar scrolled" id="navbar">
+     <div class="container nav-inner">
+       <a href="index.html" class="logo">
+-        <div class="logo-icon">K</div>
++        <img src="public/kesme-logo.svg" alt="KESME SACCO Ltd" class="logo-img" />
+         <div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div>
+       </a>
+       <nav class="nav-links">
+@@ -34,6 +34,8 @@
+ 
+   <!-- PAGE HERO -->
+   <section class="page-hero">
++    <img src="https://images.unsplash.com/photo-1509099342178-e323b1717dba?w=1800&q=80&auto=format&fit=crop" alt="Kenyan community member farming" class="page-hero-img" />
++    <div class="page-hero-overlay"></div>
+     <div class="hero-pattern"></div>
+     <div class="container page-hero-content">
+       <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span class="current">Membership</span></div>
+@@ -301,7 +303,7 @@
+   <footer class="footer">
+     <div class="container footer-inner">
+       <div class="footer-brand">
+-        <div class="logo"><div class="logo-icon">K</div><div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div></div>
++        <div class="logo"><img src="public/kesme-logo.svg" alt="KESME SACCO Ltd" class="logo-img-footer" /><div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div></div>
+         <p>'Simplifying money matters for rural wealth creation'</p>
+         <div class="footer-socials"><a class="social-btn" href="#">f</a><a class="social-btn" href="#">t</a><a class="social-btn" href="#">w</a><a class="social-btn" href="#">in</a></div>
+       </div>
+diff --git a/news.html b/news.html
+index 0918ca5..2a4058b 100644
+--- a/news.html
++++ b/news.html
+@@ -12,7 +12,7 @@
+   <header class="navbar scrolled" id="navbar">
+     <div class="container nav-inner">
+       <a href="index.html" class="logo">
+-        <div class="logo-icon">K</div>
++        <img src="public/kesme-logo.svg" alt="KESME SACCO Ltd" class="logo-img" />
+         <div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div>
+       </a>
+       <nav class="nav-links">
+@@ -34,6 +34,8 @@
+ 
+   <!-- PAGE HERO -->
+   <section class="page-hero">
++    <img src="https://images.unsplash.com/photo-1661328992560-55256f06bdad?w=1800&q=80&auto=format&fit=crop" alt="Greenhouse crops growing" class="page-hero-img" />
++    <div class="page-hero-overlay"></div>
+     <div class="hero-pattern"></div>
+     <div class="container page-hero-content">
+       <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span class="current">News &amp; Updates</span></div>
+@@ -196,7 +198,7 @@
+   <footer class="footer">
+     <div class="container footer-inner">
+       <div class="footer-brand">
+-        <div class="logo"><div class="logo-icon">K</div><div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div></div>
++        <div class="logo"><img src="public/kesme-logo.svg" alt="KESME SACCO Ltd" class="logo-img-footer" /><div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div></div>
+         <p>'Simplifying money matters for rural wealth creation'</p>
+         <div class="footer-socials"><a class="social-btn" href="#">f</a><a class="social-btn" href="#">t</a><a class="social-btn" href="#">w</a><a class="social-btn" href="#">in</a></div>
+       </div>
+diff --git a/products.html b/products.html
+index 82d5b64..10a101f 100644
+--- a/products.html
++++ b/products.html
+@@ -12,7 +12,7 @@
+   <header class="navbar scrolled" id="navbar">
+     <div class="container nav-inner">
+       <a href="index.html" class="logo">
+-        <div class="logo-icon">K</div>
++        <img src="public/kesme-logo.svg" alt="KESME SACCO Ltd" class="logo-img" />
+         <div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div>
+       </a>
+       <nav class="nav-links">
+@@ -34,6 +34,8 @@
+ 
+   <!-- PAGE HERO -->
+   <section class="page-hero">
++    <img src="https://images.unsplash.com/photo-1596788068873-9ffd5cacd4c4?w=1800&q=80&auto=format&fit=crop" alt="Farmer in a Kenyan agricultural field" class="page-hero-img" />
++    <div class="page-hero-overlay"></div>
+     <div class="hero-pattern"></div>
+     <div class="container page-hero-content">
+       <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span class="current">Products &amp; Services</span></div>
+@@ -317,7 +319,7 @@
+   <footer class="footer">
+     <div class="container footer-inner">
+       <div class="footer-brand">
+-        <div class="logo"><div class="logo-icon">K</div><div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div></div>
++        <div class="logo"><img src="public/kesme-logo.svg" alt="KESME SACCO Ltd" class="logo-img-footer" /><div class="logo-text"><span class="logo-main">KESME</span><span class="logo-sub">SACCO LTD</span></div></div>
+         <p>'Simplifying money matters for rural wealth creation'</p>
+         <div class="footer-socials"><a class="social-btn" href="#">f</a><a class="social-btn" href="#">t</a><a class="social-btn" href="#">w</a><a class="social-btn" href="#">in</a></div>
+       </div>
+diff --git a/src/components/Footer.jsx b/src/components/Footer.jsx
+index e17e15e..639dbdc 100644
+--- a/src/components/Footer.jsx
++++ b/src/components/Footer.jsx
+@@ -8,10 +8,10 @@ export default function Footer() {
+         {/* Brand */}
+         <div>
+           <div className="flex items-center gap-3 mb-4">
+-            <img src="/kesme-logo.svg" alt="KESME SACCO Ltd" className="h-12 w-auto" />
++            <img src="/kesme-logo.svg" alt="KESME SACCO Ltd" className="h-16 w-auto" />
+             <div className="leading-tight">
+-              <div className="font-poppins font-black text-white text-base tracking-wide">KESME</div>
+-              <div className="font-opensans text-primary-orange text-[10px] tracking-widest uppercase font-bold">SACCO LTD</div>
++              <div className="font-poppins font-black text-white text-lg tracking-wide">KESME</div>
++              <div className="font-opensans text-primary-orange text-xs tracking-widest uppercase font-bold">SACCO LTD</div>
+             </div>
+           </div>
+           <p className="text-white/70 text-sm leading-relaxed mb-5">
+diff --git a/src/components/Navbar.jsx b/src/components/Navbar.jsx
+index 290f429..47c2664 100644
+--- a/src/components/Navbar.jsx
++++ b/src/components/Navbar.jsx
+@@ -37,11 +37,11 @@ export default function Navbar() {
+           <img
+             src="/kesme-logo.svg"
+             alt="KESME SACCO Ltd"
+-            className="h-20 md:h-24 w-auto group-hover:scale-105 transition-transform"
++            className="h-24 md:h-28 w-auto group-hover:scale-105 transition-transform drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)]"
+           />
+           <div className="leading-tight hidden sm:block">
+-            <div className="font-poppins font-black text-white text-lg md:text-xl tracking-wide">KESME</div>
+-            <div className="font-opensans text-primary-orange text-xs md:text-sm tracking-widest uppercase font-bold">SACCO LTD</div>
++            <div className="font-poppins font-black text-white text-xl md:text-2xl tracking-wide">KESME</div>
++            <div className="font-opensans text-primary-orange text-sm md:text-base tracking-widest uppercase font-bold">SACCO LTD</div>
+           </div>
+         </Link>
+ 
+diff --git a/src/pages/About.jsx b/src/pages/About.jsx
+index d61f7a5..904932e 100644
+--- a/src/pages/About.jsx
++++ b/src/pages/About.jsx
+@@ -34,6 +34,12 @@ export default function About() {
+     <main>
+       {/* PAGE HERO */}
+       <section className="relative bg-green-dark pt-32 pb-20 overflow-hidden">
++        <img
++          src="https://images.unsplash.com/photo-1509099381441-ea3c0cf98b94?w=1800&q=80&auto=format&fit=crop"
++          alt="Kenyan farmer planting crops"
++          className="absolute inset-0 w-full h-full object-cover"
++        />
++        <div className="absolute inset-0 bg-gradient-to-br from-green-dark/95 via-green-dark/85 to-green/80" />
+         <div className="hero-pattern" />
+         <div className="relative z-10 max-w-[1200px] mx-auto px-6">
+           <div className="flex items-center gap-2 text-white/50 text-sm mb-4">
+diff --git a/src/pages/Agribusiness.jsx b/src/pages/Agribusiness.jsx
+index 0a50f19..9adfe01 100644
+--- a/src/pages/Agribusiness.jsx
++++ b/src/pages/Agribusiness.jsx
+@@ -31,6 +31,12 @@ export default function Agribusiness() {
+     <main>
+       {/* PAGE HERO */}
+       <section className="relative bg-green-dark pt-32 pb-20 overflow-hidden">
++        <img
++          src="https://images.unsplash.com/photo-1530507629858-e4977d30e9e0?w=1800&q=80&auto=format&fit=crop"
++          alt="Kenyan farmer harvesting crops"
++          className="absolute inset-0 w-full h-full object-cover"
++        />
++        <div className="absolute inset-0 bg-gradient-to-br from-green-dark/95 via-green-dark/85 to-green/80" />
+         <div className="hero-pattern" />
+         <div className="relative z-10 max-w-[1200px] mx-auto px-6">
+           <div className="flex items-center gap-2 text-white/50 text-sm mb-4">
+@@ -53,11 +59,12 @@ export default function Agribusiness() {
+             <p className="text-gray-600 leading-relaxed mb-8">From smallholder farmers in Machakos to cooperative societies and agribusiness SMEs, we design our products to match the real rhythms of agricultural production — not the other way around.</p>
+             <Link to="/contact" className="btn-primary">Discuss Agri-Financing <ArrowRight size={16} /></Link>
+           </div>
+-          <div className="rounded-2xl bg-green-pale aspect-square flex flex-col items-center justify-center gap-4 text-green/40">
+-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-24 h-24">
+-              <path d="M12 22V12M12 12C12 7 7 2 2 2c0 5 5 10 10 10zM12 12c0-5 5-10 10-10-0 5-5 10-10 10z"/>
+-            </svg>
+-            <p className="font-poppins font-semibold text-sm">Agriculture Financing</p>
++          <div className="rounded-2xl overflow-hidden aspect-square">
++            <img
++              src="https://images.unsplash.com/photo-1741940365425-1b9a575d373e?w=1000&q=80&auto=format&fit=crop"
++              alt="Kenyan farmer carrying harvested produce"
++              className="w-full h-full object-cover"
++            />
+           </div>
+         </div>
+       </section>
+diff --git a/src/pages/Contact.jsx b/src/pages/Contact.jsx
+index 5c556d2..b7dd07a 100644
+--- a/src/pages/Contact.jsx
++++ b/src/pages/Contact.jsx
+@@ -17,6 +17,12 @@ export default function Contact() {
+     <main>
+       {/* PAGE HERO */}
+       <section className="relative bg-green-dark pt-32 pb-20 overflow-hidden">
++        <img
++          src="https://images.unsplash.com/photo-1710149484964-d966b771c204?w=1800&q=80&auto=format&fit=crop"
++          alt="Kenyan farmer holding a handful of grain"
++          className="absolute inset-0 w-full h-full object-cover"
++        />
++        <div className="absolute inset-0 bg-gradient-to-br from-green-dark/95 via-green-dark/85 to-green/80" />
+         <div className="hero-pattern" />
+         <div className="relative z-10 max-w-[1200px] mx-auto px-6">
+           <div className="flex items-center gap-2 text-white/50 text-sm mb-4">
+diff --git a/src/pages/Home.jsx b/src/pages/Home.jsx
+index ec69cfc..baed387 100644
+--- a/src/pages/Home.jsx
++++ b/src/pages/Home.jsx
+@@ -73,11 +73,16 @@ export default function Home() {
+     <main>
+       {/* HERO */}
+       <section className="relative min-h-screen bg-green-dark flex items-center overflow-hidden">
+-        <div className="absolute inset-0 opacity-8 pointer-events-none">
++        <img
++          src="https://images.unsplash.com/photo-1734036871909-906fb9b3d474?w=2000&q=80&auto=format&fit=crop"
++          alt="Green tea farm in Limuru, Kenya"
++          className="absolute inset-0 w-full h-full object-cover"
++        />
++        <div className="absolute inset-0 opacity-10 pointer-events-none">
+           <div style={{backgroundImage: 'url(/brand-pattern.png)', backgroundSize: 'cover', backgroundRepeat: 'repeat'}} className="w-full h-full" />
+         </div>
+         <div className="hero-pattern" />
+-        <div className="absolute inset-0 bg-gradient-to-br from-green-dark via-green to-green-dark opacity-90" />
++        <div className="absolute inset-0 bg-gradient-to-br from-green-dark via-green-dark/90 to-green opacity-90" />
+         <div className="relative z-10 max-w-[1200px] mx-auto px-6 py-32">
+           <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-6 border border-white/20">
+             <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
+@@ -120,11 +125,12 @@ export default function Home() {
+       <section className="py-24 bg-white">
+         <div className="max-w-[1200px] mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+           <div className="relative">
+-            <div className="rounded-2xl bg-green-pale aspect-square flex flex-col items-center justify-center gap-4 text-green/40">
+-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-24 h-24">
+-                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+-              </svg>
+-              <p className="font-poppins font-semibold text-sm">Your SACCO, Your Community</p>
++            <div className="rounded-2xl overflow-hidden aspect-square">
++              <img
++                src="https://images.unsplash.com/photo-1741874299706-2b8e16839aaa?w=1000&q=80&auto=format&fit=crop"
++                alt="Kenyan farmer tending crops in a green field"
++                className="w-full h-full object-cover"
++              />
+             </div>
+             <div className="absolute -bottom-4 -right-4 bg-green-dark text-white rounded-xl px-5 py-4 shadow-xl">
+               <div className="font-poppins font-black text-3xl text-gold">2020+</div>
+diff --git a/src/pages/Membership.jsx b/src/pages/Membership.jsx
+index 72160ac..03fbb1f 100644
+--- a/src/pages/Membership.jsx
++++ b/src/pages/Membership.jsx
+@@ -64,6 +64,12 @@ export default function Membership() {
+     <main>
+       {/* PAGE HERO */}
+       <section className="relative bg-green-dark pt-32 pb-20 overflow-hidden">
++        <img
++          src="https://images.unsplash.com/photo-1509099342178-e323b1717dba?w=1800&q=80&auto=format&fit=crop"
++          alt="Kenyan community member farming"
++          className="absolute inset-0 w-full h-full object-cover"
++        />
++        <div className="absolute inset-0 bg-gradient-to-br from-green-dark/95 via-green-dark/85 to-green/80" />
+         <div className="hero-pattern" />
+         <div className="relative z-10 max-w-[1200px] mx-auto px-6">
+           <div className="flex items-center gap-2 text-white/50 text-sm mb-4">
+diff --git a/src/pages/News.jsx b/src/pages/News.jsx
+index ce6339b..0a1fdf2 100644
+--- a/src/pages/News.jsx
++++ b/src/pages/News.jsx
+@@ -60,6 +60,12 @@ export default function News() {
+     <main>
+       {/* PAGE HERO */}
+       <section className="relative bg-green-dark pt-32 pb-20 overflow-hidden">
++        <img
++          src="https://images.unsplash.com/photo-1661328992560-55256f06bdad?w=1800&q=80&auto=format&fit=crop"
++          alt="Greenhouse crops growing"
++          className="absolute inset-0 w-full h-full object-cover"
++        />
++        <div className="absolute inset-0 bg-gradient-to-br from-green-dark/95 via-green-dark/85 to-green/80" />
+         <div className="hero-pattern" />
+         <div className="relative z-10 max-w-[1200px] mx-auto px-6">
+           <div className="flex items-center gap-2 text-white/50 text-sm mb-4">
+diff --git a/src/pages/Products.jsx b/src/pages/Products.jsx
+index aed6234..c7e9588 100644
+--- a/src/pages/Products.jsx
++++ b/src/pages/Products.jsx
+@@ -178,6 +178,12 @@ export default function Products() {
+     <main>
+       {/* PAGE HERO */}
+       <section className="relative bg-green-dark pt-32 pb-20 overflow-hidden">
++        <img
++          src="https://images.unsplash.com/photo-1596788068873-9ffd5cacd4c4?w=1800&q=80&auto=format&fit=crop"
++          alt="Farmer in a Kenyan agricultural field"
++          className="absolute inset-0 w-full h-full object-cover"
++        />
++        <div className="absolute inset-0 bg-gradient-to-br from-green-dark/95 via-green-dark/85 to-green/80" />
+         <div className="hero-pattern" />
+         <div className="relative z-10 max-w-[1200px] mx-auto px-6">
+           <div className="flex items-center gap-2 text-white/50 text-sm mb-4">
+diff --git a/style.css b/style.css
+index 8a51f73..191514e 100644
+--- a/style.css
++++ b/style.css
+@@ -126,7 +126,9 @@ ul { list-style: none; }
+ }
+ .nav-inner { display: flex; align-items: center; gap: 24px; }
+ 
+-.logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
++.logo { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
++.logo-img { height: 64px; width: auto; flex-shrink: 0; filter: drop-shadow(0 2px 6px rgba(0,0,0,.35)); }
++.logo-img-footer { height: 40px; width: auto; flex-shrink: 0; }
+ .logo-icon {
+   width: 44px; height: 44px;
+   background: var(--gold);
+@@ -137,8 +139,8 @@ ul { list-style: none; }
+   flex-shrink: 0;
+ }
+ .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+-.logo-main { font-family: 'Poppins', sans-serif; font-size: 1.05rem; font-weight: 800; color: var(--white); }
+-.logo-sub  { font-size: .6rem; font-weight: 500; color: rgba(255,255,255,.65); letter-spacing: .1em; }
++.logo-main { font-family: 'Poppins', sans-serif; font-size: 1.3rem; font-weight: 800; color: var(--white); }
++.logo-sub  { font-size: .74rem; font-weight: 500; color: rgba(255,255,255,.65); letter-spacing: .1em; }
+ 
+ .nav-links { display: flex; gap: 4px; margin-left: auto; }
+ .nav-links a {
+@@ -296,6 +298,11 @@ ul { list-style: none; }
+   position: relative; overflow: hidden;
+ }
+ .page-hero-content { position: relative; z-index: 1; }
++.page-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
++.page-hero-overlay {
++  position: absolute; inset: 0;
++  background: linear-gradient(135deg, rgba(27,94,32,.93) 0%, rgba(46,125,50,.86) 60%, rgba(56,142,60,.78) 100%);
++}
+ .page-hero h1 { font-size: clamp(2rem,5vw,3rem); font-weight: 800; color: var(--white); margin-bottom: 12px; }
+ .page-hero p { color: rgba(255,255,255,.8); font-size: 1.05rem; max-width: 560px; }
+ .breadcrumb { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
+@@ -640,8 +647,9 @@ input[type="range"]::-webkit-slider-thumb { appearance: none; width: 20px; heigh
+   background: linear-gradient(135deg, var(--green-pale), #C8E6C9);
+   border-radius: var(--radius-lg); min-height: 380px;
+   display: flex; align-items: center; justify-content: center;
+-  position: relative;
++  position: relative; overflow: hidden;
+ }
++.agri-img img { width: 100%; height: 100%; object-fit: cover; }
+ 
+ .focus-section { padding: 72px 0; background: var(--green-pale); }
+ .focus-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; }
