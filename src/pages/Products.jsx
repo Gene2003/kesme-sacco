@@ -178,6 +178,12 @@ export default function Products() {
     <main>
       {/* PAGE HERO */}
       <section className="relative bg-green-dark pt-32 pb-20 overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1596788068873-9ffd5cacd4c4?w=1800&q=80&auto=format&fit=crop"
+          alt="Farmer in a Kenyan agricultural field"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-green-dark/95 via-green-dark/85 to-green/80" />
         <div className="hero-pattern" />
         <div className="relative z-10 max-w-[1200px] mx-auto px-6">
           <div className="flex items-center gap-2 text-white/50 text-sm mb-4">

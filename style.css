@@ -126,7 +126,9 @@ ul { list-style: none; }
 }
 .nav-inner { display: flex; align-items: center; gap: 24px; }
 
-.logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.logo { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.logo-img { height: 64px; width: auto; flex-shrink: 0; filter: drop-shadow(0 2px 6px rgba(0,0,0,.35)); }
+.logo-img-footer { height: 40px; width: auto; flex-shrink: 0; }
 .logo-icon {
   width: 44px; height: 44px;
   background: var(--gold);
@@ -137,8 +139,8 @@ ul { list-style: none; }
   flex-shrink: 0;
 }
 .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
-.logo-main { font-family: 'Poppins', sans-serif; font-size: 1.05rem; font-weight: 800; color: var(--white); }
-.logo-sub  { font-size: .6rem; font-weight: 500; color: rgba(255,255,255,.65); letter-spacing: .1em; }
+.logo-main { font-family: 'Poppins', sans-serif; font-size: 1.3rem; font-weight: 800; color: var(--white); }
+.logo-sub  { font-size: .74rem; font-weight: 500; color: rgba(255,255,255,.65); letter-spacing: .1em; }
 
 .nav-links { display: flex; gap: 4px; margin-left: auto; }
 .nav-links a {
@@ -296,6 +298,11 @@ ul { list-style: none; }
   position: relative; overflow: hidden;
 }
 .page-hero-content { position: relative; z-index: 1; }
+.page-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.page-hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(27,94,32,.93) 0%, rgba(46,125,50,.86) 60%, rgba(56,142,60,.78) 100%);
+}
 .page-hero h1 { font-size: clamp(2rem,5vw,3rem); font-weight: 800; color: var(--white); margin-bottom: 12px; }
 .page-hero p { color: rgba(255,255,255,.8); font-size: 1.05rem; max-width: 560px; }
 .breadcrumb { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
@@ -640,8 +647,9 @@ input[type="range"]::-webkit-slider-thumb { appearance: none; width: 20px; heigh
   background: linear-gradient(135deg, var(--green-pale), #C8E6C9);
   border-radius: var(--radius-lg); min-height: 380px;
   display: flex; align-items: center; justify-content: center;
-  position: relative;
+  position: relative; overflow: hidden;
 }
+.agri-img img { width: 100%; height: 100%; object-fit: cover; }
 
 .focus-section { padding: 72px 0; background: var(--green-pale); }
 .focus-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; }

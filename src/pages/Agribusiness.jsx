@@ -31,6 +31,12 @@ export default function Agribusiness() {
     <main>
       {/* PAGE HERO */}
       <section className="relative bg-green-dark pt-32 pb-20 overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1530507629858-e4977d30e9e0?w=1800&q=80&auto=format&fit=crop"
+          alt="Kenyan farmer harvesting crops"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-green-dark/95 via-green-dark/85 to-green/80" />
         <div className="hero-pattern" />
         <div className="relative z-10 max-w-[1200px] mx-auto px-6">
           <div className="flex items-center gap-2 text-white/50 text-sm mb-4">
@@ -53,11 +59,12 @@ export default function Agribusiness() {
             <p className="text-gray-600 leading-relaxed mb-8">From smallholder farmers in Machakos to cooperative societies and agribusiness SMEs, we design our products to match the real rhythms of agricultural production — not the other way around.</p>
             <Link to="/contact" className="btn-primary">Discuss Agri-Financing <ArrowRight size={16} /></Link>
           </div>
-          <div className="rounded-2xl bg-green-pale aspect-square flex flex-col items-center justify-center gap-4 text-green/40">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-24 h-24">
-              <path d="M12 22V12M12 12C12 7 7 2 2 2c0 5 5 10 10 10zM12 12c0-5 5-10 10-10-0 5-5 10-10 10z"/>
-            </svg>
-            <p className="font-poppins font-semibold text-sm">Agriculture Financing</p>
+          <div className="rounded-2xl overflow-hidden aspect-square">
+            <img
+              src="https://images.unsplash.com/photo-1741940365425-1b9a575d373e?w=1000&q=80&auto=format&fit=crop"
+              alt="Kenyan farmer carrying harvested produce"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </section>

@@ -73,11 +73,16 @@ export default function Home() {
     <main>
       {/* HERO */}
       <section className="relative min-h-screen bg-green-dark flex items-center overflow-hidden">
-        <div className="absolute inset-0 opacity-8 pointer-events-none">
+        <img
+          src="https://images.unsplash.com/photo-1734036871909-906fb9b3d474?w=2000&q=80&auto=format&fit=crop"
+          alt="Green tea farm in Limuru, Kenya"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div style={{backgroundImage: 'url(/brand-pattern.png)', backgroundSize: 'cover', backgroundRepeat: 'repeat'}} className="w-full h-full" />
         </div>
         <div className="hero-pattern" />
-        <div className="absolute inset-0 bg-gradient-to-br from-green-dark via-green to-green-dark opacity-90" />
+        <div className="absolute inset-0 bg-gradient-to-br from-green-dark via-green-dark/90 to-green opacity-90" />
         <div className="relative z-10 max-w-[1200px] mx-auto px-6 py-32">
           <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-6 border border-white/20">
             <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
@@ -120,11 +125,12 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
-            <div className="rounded-2xl bg-green-pale aspect-square flex flex-col items-center justify-center gap-4 text-green/40">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-24 h-24">
-                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
-              </svg>
-              <p className="font-poppins font-semibold text-sm">Your SACCO, Your Community</p>
+            <div className="rounded-2xl overflow-hidden aspect-square">
+              <img
+                src="https://images.unsplash.com/photo-1741874299706-2b8e16839aaa?w=1000&q=80&auto=format&fit=crop"
+                alt="Kenyan farmer tending crops in a green field"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="absolute -bottom-4 -right-4 bg-green-dark text-white rounded-xl px-5 py-4 shadow-xl">
               <div className="font-poppins font-black text-3xl text-gold">2020+</div>

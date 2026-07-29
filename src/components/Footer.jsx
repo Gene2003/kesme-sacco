@@ -8,10 +8,10 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <img src="/kesme-logo.svg" alt="KESME SACCO Ltd" className="h-12 w-auto" />
+            <img src="/kesme-logo.svg" alt="KESME SACCO Ltd" className="h-16 w-auto" />
             <div className="leading-tight">
-              <div className="font-poppins font-black text-white text-base tracking-wide">KESME</div>
-              <div className="font-opensans text-primary-orange text-[10px] tracking-widest uppercase font-bold">SACCO LTD</div>
+              <div className="font-poppins font-black text-white text-lg tracking-wide">KESME</div>
+              <div className="font-opensans text-primary-orange text-xs tracking-widest uppercase font-bold">SACCO LTD</div>
             </div>
           </div>
           <p className="text-white/70 text-sm leading-relaxed mb-5">

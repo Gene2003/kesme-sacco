@@ -37,11 +37,11 @@ export default function Navbar() {
           <img
             src="/kesme-logo.svg"
             alt="KESME SACCO Ltd"
-            className="h-20 md:h-24 w-auto group-hover:scale-105 transition-transform"
+            className="h-24 md:h-28 w-auto group-hover:scale-105 transition-transform drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)]"
           />
           <div className="leading-tight hidden sm:block">
-            <div className="font-poppins font-black text-white text-lg md:text-xl tracking-wide">KESME</div>
-            <div className="font-opensans text-primary-orange text-xs md:text-sm tracking-widest uppercase font-bold">SACCO LTD</div>
+            <div className="font-poppins font-black text-white text-xl md:text-2xl tracking-wide">KESME</div>
+            <div className="font-opensans text-primary-orange text-sm md:text-base tracking-widest uppercase font-bold">SACCO LTD</div>
           </div>
         </Link>
 
